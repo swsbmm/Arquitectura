@@ -1,0 +1,1 @@
+java --enable-preview -classpath AppErdu.jar; AppErdu

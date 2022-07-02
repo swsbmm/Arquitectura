@@ -1,1 +1,1 @@
-java --enable-preview -classpath api/api.jar;AppErdu.jar; AppErdu
+java --enable-preview -classpath AppErdu.jar; AppErdu
