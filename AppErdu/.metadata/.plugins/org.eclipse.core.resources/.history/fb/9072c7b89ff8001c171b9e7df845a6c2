@@ -1,0 +1,5 @@
+package cableado;
+
+public interface ISalida {
+	void desplegarInformacion();
+}

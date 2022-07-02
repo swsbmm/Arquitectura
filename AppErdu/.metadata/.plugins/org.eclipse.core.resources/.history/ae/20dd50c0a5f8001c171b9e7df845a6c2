@@ -1,0 +1,12 @@
+import api.org.cableado.IModerador;
+import api.org.utilidades.Cargador;
+
+public class AppErdu implements IModerador{
+
+	@Override
+	public void moderar() {
+		Cargador crgBack = new Cargador("back");
+		Cargador crgBack = new Cargador("front");
+	}
+
+}

@@ -1,0 +1,6 @@
+package cableado;
+
+public interface IGestionUsuario {
+    void registrarUsuario();
+    void validarUsuario();
+}

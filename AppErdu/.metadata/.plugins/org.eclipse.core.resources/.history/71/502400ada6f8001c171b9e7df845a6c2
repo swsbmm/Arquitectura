@@ -1,0 +1,29 @@
+import java.security.DomainCombiner;
+
+import javax.swing.JOptionPane;
+
+import api.org.cableado.IModerador;
+import api.org.cableado.ISalida;
+import api.org.utilidades.Cargador;
+
+public class AppErdu implements IModerador{
+
+	@Override
+	public void moderar() {
+		Cargador crgBack = new Cargador("back");
+		Cargador crgFront = new Cargador("front");
+		Class cls =  crgFront.getClase(ISalida.class.getName());
+		try {
+			ISalida inv = (ISalida) cls.newInstance();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(null, "No se encuentra el componente SALIDA.");
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		new AppErdu().moderar();
+	}
+
+}

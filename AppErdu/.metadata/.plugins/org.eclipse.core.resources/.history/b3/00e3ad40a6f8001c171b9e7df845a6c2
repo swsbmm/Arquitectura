@@ -1,0 +1,21 @@
+import api.org.cableado.IModerador;
+import api.org.cableado.ISalida;
+import api.org.utilidades.Cargador;
+
+public class AppErdu implements IModerador{
+
+	@Override
+	public void moderar() {
+		Cargador crgBack = new Cargador("back");
+		Cargador crgFront = new Cargador("front");
+		Class cls =  crgFront.getClase(ISalida.class.getName());
+		try {
+			ISalida inv = (ISalida) cls.newInstance();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

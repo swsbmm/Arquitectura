@@ -1,0 +1,7 @@
+package inv.logica;
+
+import api.org.cableado.IGestionUsuario;
+
+public class GestionUsuario implements IGestionUsuario{
+
+}

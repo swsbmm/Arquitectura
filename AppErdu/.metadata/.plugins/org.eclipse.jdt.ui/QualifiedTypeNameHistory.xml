@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="api.org.cableado.IModerador"/>
+    <fullyQualifiedTypeName name="api.org.utilidades.Cargador"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="api.org.cableado.ISalida"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
+    <fullyQualifiedTypeName name="AppErdu"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="api.org.cableado.IBusqueda"/>
+    <fullyQualifiedTypeName name="api.org.cableado.IRecomendacion"/>
+    <fullyQualifiedTypeName name="api.org.cableado.IGestionUsuario"/>
+    <fullyQualifiedTypeName name="api.org.cableado.IGestionObjeto"/>
+    <fullyQualifiedTypeName name="api.org.cableado.IComunicacion"/>
+    <fullyQualifiedTypeName name="api.org.cableado.IEntrada"/>
+</qualifiedTypeNameHistroy>

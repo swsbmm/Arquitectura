@@ -1,0 +1,5 @@
+import api.org.cableado.IModerador;
+
+public class AppErdu implements IModerador{
+
+}

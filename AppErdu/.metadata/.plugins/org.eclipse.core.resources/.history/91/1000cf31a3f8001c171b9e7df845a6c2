@@ -1,0 +1,8 @@
+package inv.presentacion;
+
+import api.org.cableado.IEntrada;
+import api.org.cableado.ISalida;
+
+public class Gui implements IEntrada, ISalida{
+
+}

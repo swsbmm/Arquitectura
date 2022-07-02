@@ -1,0 +1,52 @@
+import java.security.DomainCombiner;
+
+import javax.swing.JOptionPane;
+
+import api.org.cableado.IBusqueda;
+import api.org.cableado.IEntrada;
+import api.org.cableado.IModerador;
+import api.org.cableado.ISalida;
+import api.org.utilidades.Cargador;
+
+public class AppErdu implements IModerador{
+
+	@Override
+	public void moderar() {
+		//CARGADOR DE COMPONENTES FRONT
+		Cargador crgFront = new Cargador("front");
+		
+		//MONTANDO LOS COMPONENTES
+		
+		//COMPONENTE GUI SALIDA DE INFORMACION
+		try {
+			Class cls =  crgFront.getClase(IEntrada.class.getName());
+			System.out.println(ISalida.class.getName());
+			ISalida inv = (ISalida) cls.newInstance();
+			inv.desplegarInformacion();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(null, "No se encuentra el componente SALIDA.");
+		}
+		
+		//CARGANDO COMPONENTES BACK
+		Cargador crgBack = new Cargador("back");
+		
+		//COMPONENTE BUSQUEDA
+		try {
+			Class cls =  crgBack.getClase(IBusqueda.class.getName());
+			System.out.println(ISalida.class.getName());
+			ISalida inv = (ISalida) cls.newInstance();
+			inv.desplegarInformacion();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			JOptionPane.showMessageDialog(null, "No se encuentra el componente SALIDA.");
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		new AppErdu().moderar();
+	}
+
+}

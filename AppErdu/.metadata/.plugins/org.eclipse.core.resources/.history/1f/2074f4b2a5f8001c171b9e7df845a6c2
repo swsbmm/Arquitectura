@@ -1,0 +1,11 @@
+import api.org.cableado.IModerador;
+
+public class AppErdu implements IModerador{
+
+	@Override
+	public void moderar() {
+		
+		
+	}
+
+}

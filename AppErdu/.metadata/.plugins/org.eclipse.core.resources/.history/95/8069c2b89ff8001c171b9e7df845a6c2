@@ -1,0 +1,6 @@
+package cableado;
+
+public interface IGestionObjeto {
+    void reportarObjetoPerdido();
+    void reportarObjetoEncontrado();
+}
